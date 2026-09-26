@@ -1,0 +1,15 @@
+{
+  "specVersion": "1.0",
+  "entries": [
+    {
+      "identifier": "urn:air:nyaya-portal:legal-assistance",
+      "displayName": "Nyaya_Portal Legal Assistance",
+      "type": "application/mcp-server-card+json",
+      "url": "/",
+      "representativeQueries": [
+        "analyze lease agreement",
+        "review financial obligations"
+      ]
+    }
+  ]
+}

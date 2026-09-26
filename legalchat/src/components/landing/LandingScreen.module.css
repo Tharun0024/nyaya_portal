@@ -1,0 +1,279 @@
+.page {
+  background-color: var(--color-bg-primary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: var(--spacing-8) var(--spacing-6) var(--spacing-12);
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── Header / Identity ─────────────────────────────────────────────────── */
+.header {
+  margin-bottom: var(--spacing-16);
+}
+
+.logotype {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+}
+
+.logotypeName {
+  font-size: 1.125rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  color: var(--color-text-primary);
+}
+
+/* ── Hero ──────────────────────────────────────────────────────────────── */
+.heroSection {
+  margin-bottom: var(--spacing-16);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heroEyebrow {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-4);
+}
+
+.heroHeadline {
+  max-width: 700px;
+  margin-bottom: var(--spacing-5);
+  color: var(--color-text-primary);
+}
+
+.heroSubtitle {
+  max-width: 600px;
+  margin-bottom: var(--spacing-8);
+  font-size: 1.0625rem;
+}
+
+.heroActions {
+  display: flex;
+  gap: var(--spacing-4);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ── Context Lens Proof ────────────────────────────────────────────────── */
+.proofSection {
+  margin-bottom: var(--spacing-16);
+}
+
+.proofCards {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+}
+
+@media (min-width: 768px) {
+  .proofCards {
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
+
+.proofCard {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-5);
+}
+
+.tenantCard {
+  border-top: 3px solid var(--color-brand);
+}
+
+.landlordCard {
+  border-top: 3px solid var(--color-text-muted);
+}
+
+.proofVs {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .proofVs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-text-secondary);
+    background-color: var(--color-bg-tertiary);
+    border: 1px solid var(--color-border);
+    border-radius: 9999px; /* Minimal pill use for "vs" separator */
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+  }
+}
+
+.proofHeader {
+  margin-bottom: var(--spacing-4);
+  padding-bottom: var(--spacing-2);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.proofRole {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+}
+
+.proofBody {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.metaRow {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
+}
+
+/* ── Evidence Trail ────────────────────────────────────────────────────── */
+.evidenceSection {
+  margin-bottom: var(--spacing-16);
+  display: flex;
+  justify-content: center;
+}
+
+.evidenceCard {
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+  padding: var(--spacing-6);
+  background-color: var(--color-bg-secondary);
+  border-left: 4px solid var(--color-verified);
+}
+
+.evidenceItem {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-1);
+}
+
+.evidenceMetaRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-6);
+  margin-top: var(--spacing-2);
+  padding-top: var(--spacing-4);
+  border-top: 1px solid var(--color-border);
+}
+
+.evidenceItemRow {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-3);
+}
+
+/* ── Entry Points ──────────────────────────────────────────────────────── */
+.entryPointsSection {
+  margin-bottom: var(--spacing-8);
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--spacing-10);
+}
+
+.entryPoints {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-6);
+}
+
+.demoCard, .liveCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--spacing-5);
+  padding: var(--spacing-6);
+}
+
+.demoCardHeader {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.actionBtn {
+  width: 100%;
+  padding: 0.75rem 1rem !important;
+  font-size: 0.9375rem !important;
+}
+
+/* ── Error Alert ───────────────────────────────────────────────────────── */
+.errorAlert {
+  margin-top: var(--spacing-4);
+  padding: var(--spacing-4);
+  background-color: var(--color-severity-high-bg);
+  border: 1px solid var(--color-severity-high-border);
+  border-radius: var(--border-radius-md);
+}
+
+.errorTitle {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-severity-high);
+  margin-bottom: var(--spacing-1);
+}
+
+/* ── Disclaimer ────────────────────────────────────────────────────────── */
+.disclaimerWrapper {
+  margin-top: auto;
+  padding-top: var(--spacing-8);
+}
+
+/* ── Mobile ────────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .container {
+    padding: var(--spacing-6) var(--spacing-4) var(--spacing-8);
+  }
+
+  .header {
+    margin-bottom: var(--spacing-8);
+  }
+
+  .heroSection {
+    margin-bottom: var(--spacing-10);
+  }
+
+  .heroHeadline {
+    font-size: 1.75rem;
+  }
+
+  .entryPoints {
+    grid-template-columns: 1fr;
+  }
+
+  .proofSection {
+    margin-bottom: var(--spacing-10);
+  }
+
+  .evidenceSection {
+    margin-bottom: var(--spacing-10);
+  }
+}

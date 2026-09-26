@@ -1,0 +1,266 @@
+/* SpikeHarness.module.css — minimal, functional, not production-polished */
+
+.harness {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  color: #1a1a2e;
+  background: #f8f9fc;
+  min-height: 100vh;
+}
+
+.title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 0.25rem;
+}
+
+.subtitle {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin: 0 0 1.5rem;
+}
+
+.disclaimer {
+  background: #fef3c7;
+  border: 1px solid #f59e0b;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  font-size: 0.85rem;
+  color: #92400e;
+  margin-bottom: 1.5rem;
+}
+
+.controls {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.sectionTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin: 0 0 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.fieldGroup {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.fileInput {
+  font-size: 0.875rem;
+  padding: 0.25rem 0;
+}
+
+.select {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  background: white;
+  color: #1a1a2e;
+  max-width: 300px;
+}
+
+.select:focus {
+  outline: 2px solid #6366f1;
+  outline-offset: 2px;
+}
+
+.hint {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.fileInfo {
+  font-size: 0.8rem;
+  color: #059669;
+  font-weight: 500;
+}
+
+.analyzeBtn {
+  margin-top: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.analyzeBtn:hover:not(:disabled) {
+  background: #4338ca;
+}
+
+.analyzeBtn:focus-visible {
+  outline: 2px solid #6366f1;
+  outline-offset: 3px;
+}
+
+.analyzeBtn:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.errorBox {
+  background: #fef2f2;
+  border: 1px solid #fca5a5;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  color: #991b1b;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.results {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  background: #f3f4f6;
+  color: #374151;
+}
+
+.latency {
+  font-size: 0.75rem;
+  color: #6b7280;
+  font-weight: 400;
+}
+
+.meta {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.8rem;
+  color: #6b7280;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.summary {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #374151;
+  margin-bottom: 1rem;
+}
+
+.rawJson {
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.rawJson summary {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #6b7280;
+  cursor: pointer;
+  background: #f9fafb;
+}
+
+.code {
+  padding: 1rem;
+  font-size: 0.75rem;
+  overflow-x: auto;
+  background: #1e1e2e;
+  color: #cdd6f4;
+  margin: 0;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.evidence {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.evidenceList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.evidenceItem {
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 0.75rem;
+}
+
+.evidenceHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+
+.statusBadge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.pageBadge {
+  font-size: 0.7rem;
+  color: #6b7280;
+  background: #f3f4f6;
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+}
+
+.simBadge {
+  font-size: 0.7rem;
+  color: #6b7280;
+}
+
+.quote {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-size: 0.875rem;
+  color: #374151;
+  border-left: 3px solid #e5e7eb;
+  padding-left: 0.75rem;
+  margin: 0 0 0.35rem;
+  font-style: italic;
+}
+
+.reason {
+  font-size: 0.75rem;
+  color: #6b7280;
+  margin: 0;
+}

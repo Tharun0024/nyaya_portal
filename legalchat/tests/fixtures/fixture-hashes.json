@@ -1,0 +1,7 @@
+{
+  "clean-lease.pdf": "02fe43a7719f0034d709f5c71b2ae9e5d7f80ab31253ba0aad37e70056b6317c",
+  "stress-lease.pdf": "5870cb2c841f2a6e5fd432a24b84a991d31aed52272d88213edfa25538471738",
+  "adversarial.pdf": "c1ca442ece4310755f2f08b4dfa68a3134a52d7e427929b10b56601c61856485",
+  "generated_at": "2026-09-16T02:43:12.084Z",
+  "generator": "scripts/generate-fixtures.ts"
+}
