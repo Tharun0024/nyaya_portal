@@ -1,0 +1,6 @@
+# Nyaya_Portal
+
+> AI for Legal Assistance & Access. Informational legal-document analysis with independently checked source evidence.
+
+- [Nyaya_Portal](/)
+- [Demo](/)

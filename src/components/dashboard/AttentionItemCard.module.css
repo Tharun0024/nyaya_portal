@@ -1,0 +1,285 @@
+.card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  background-color: var(--color-bg-secondary);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-4);
+  padding: var(--spacing-5);
+  border-left-width: 4px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* ── Severity border indicator ──────────────────────────────────────────── */
+.severityHigh {
+  border-left-color: var(--color-severity-high);
+}
+
+.severityCaution {
+  border-left-color: var(--color-severity-caution);
+}
+
+.severityInfo {
+  border-left-color: var(--color-severity-info);
+}
+
+/* ── 1. Header: Severity + Finding Title ───────────────────────────────── */
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.severityBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: var(--border-radius-sm);
+  width: fit-content;
+}
+
+.severityIcon {
+  font-size: 0.75rem;
+  line-height: 1;
+}
+
+.severityText {
+  line-height: 1;
+}
+
+.severityHigh .severityBadge {
+  background-color: var(--color-severity-high-bg);
+  color: var(--color-severity-high);
+  border: 1px solid var(--color-severity-high-border);
+}
+
+.severityCaution .severityBadge {
+  background-color: var(--color-severity-caution-bg);
+  color: var(--color-severity-caution);
+  border: 1px solid var(--color-severity-caution-border);
+}
+
+.severityInfo .severityBadge {
+  background-color: var(--color-severity-info-bg);
+  color: var(--color-severity-info);
+  border: 1px solid var(--color-severity-info-border);
+}
+
+.title {
+  font-size: 1.0625rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  line-height: 1.35;
+  margin: 0;
+}
+
+/* ── 2. Why it matters (Contextual Explanation) ───────────────────────── */
+.explanation {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+/* ── 3. Evidence / Source Block (Document-like surface) ────────────────── */
+.evidenceContainer {
+  background-color: var(--color-bg-primary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-sm);
+  padding: var(--spacing-3) var(--spacing-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-3);
+}
+
+.evidenceHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--spacing-2);
+}
+
+.sourceMeta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sourceLabel {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.metaDot {
+  color: var(--color-border-strong);
+  font-size: 0.875rem;
+}
+
+.pageHint {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+}
+
+/* ── Verification Badge ───────────────────────────────────────────────── */
+.evidenceBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: var(--border-radius-sm);
+  flex-shrink: 0;
+}
+
+.badgeIcon {
+  font-size: 0.75rem;
+  line-height: 1;
+}
+
+.evidenceBadgeVerified {
+  background: var(--color-verified-bg);
+  color: var(--color-verified);
+  border: 1px solid #86EFAC;
+}
+
+.evidenceBadgeApprox {
+  background: var(--color-approximate-bg);
+  color: var(--color-approximate);
+  border: 1px solid #FDE68A;
+}
+
+.evidenceBadgeMultiple {
+  background: var(--color-brand-light);
+  color: var(--color-brand);
+  border: 1px solid var(--color-brand-mid);
+}
+
+.evidenceBadgeUnverified {
+  background: var(--color-bg-tertiary);
+  color: var(--color-text-secondary);
+  border: 1px solid var(--color-border);
+}
+
+/* ── Verbatim Quote ──────────────────────────────────────────────────── */
+.quote {
+  font-family: var(--font-family-serif);
+  font-size: 0.8125rem;
+  line-height: 1.65;
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-secondary);
+  border-left: 3px solid var(--color-border-strong);
+  border-top: 1px solid var(--color-border);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
+  padding: var(--spacing-2) var(--spacing-3);
+  margin: 0;
+  font-style: italic;
+  quotes: none;
+}
+
+/* ── Action Anchor: Show in document ─────────────────────────────────── */
+.evidenceActionRow {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.evidenceBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--border-radius-sm);
+  color: var(--color-brand);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.evidenceBtn:hover {
+  background-color: var(--color-brand-light);
+  border-color: var(--color-brand-mid);
+  color: var(--color-brand-hover);
+}
+
+.evidenceBtn:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 2px;
+}
+
+.evidenceBtnActive {
+  background-color: var(--color-verified-bg);
+  border-color: #86EFAC;
+  color: var(--color-verified);
+}
+
+.evidenceBtnActive:hover {
+  background-color: #DCFCE7;
+  border-color: #4ADE80;
+  color: #166534;
+}
+
+.actionIcon {
+  font-size: 0.875rem;
+  line-height: 1;
+}
+
+.actionLabel {
+  line-height: 1.2;
+}
+
+.actionArrow {
+  font-size: 0.875rem;
+  line-height: 1;
+  transition: transform 0.15s ease;
+}
+
+.evidenceBtn:hover .actionArrow {
+  transform: translateX(2px);
+}
+
+.evidenceUnavailable {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8125rem;
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
+
+.unavailableDot {
+  font-size: 0.6875rem;
+  color: var(--color-text-muted);
+}
+
+/* ── 4. Guided Actions wrapper (Secondary) ───────────────────────────── */
+.guidedActionsWrapper {
+  padding-top: var(--spacing-3);
+  border-top: 1px solid var(--color-border);
+}
+
+@media (max-width: 767px) {
+  .evidenceBtn {
+    width: 100%;
+    justify-content: center;
+    padding: 10px 14px; /* full touch target */
+  }
+}

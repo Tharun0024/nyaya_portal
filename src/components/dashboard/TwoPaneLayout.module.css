@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: var(--color-bg-primary);
+}
+
+.leftPane {
+  flex: 0 0 520px;
+  width: 520px;
+  height: 100%;
+  overflow: hidden;
+  border-right: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+}
+
+.rightPane {
+  flex: 1;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+/* ── Mobile: stack vertically, findings first ───────────────────────────── */
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .leftPane {
+    flex: none;
+    width: 100%;
+    height: 50vh;
+    border-right: none;
+    border-bottom: 2px solid var(--color-border-strong);
+    overflow-y: auto;
+  }
+
+  .rightPane {
+    flex: none;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+  }
+}

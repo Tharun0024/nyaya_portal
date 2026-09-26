@@ -1,0 +1,51 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Secrets — NEVER commit these
+.env
+.env.local
+.env.production
+.env.*.local
+
+# Build artifacts & coverage
+coverage/
+*.tsbuildinfo
+
+# Generated cache files
+graphify-out/
+
+# Large test fixtures — keep repo under 10 MB
+tests/fixtures/*.pdf
+!tests/fixtures/stress-lease.pdf
+
+# Live validation results — local artifacts (hashes committed, raw results not)
+scripts/results/validation-*.json
+
+# tsx cache
+.tsx-cache/
+
+# Scratch & temporary debugging scripts
+scratch/
+test-preflight.ts
